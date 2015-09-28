@@ -1,0 +1,43 @@
+ #include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+   string raptor_prompt_variable_zzyz;
+   int x1;
+   int a;
+   int b;
+   int c;
+   int disk;
+   int x2;
+
+   raptor_prompt_variable_zzyz ="masukkan nilai 1";
+   cout << raptor_prompt_variable_zzyz << endl;
+   cin >> a;
+   raptor_prompt_variable_zzyz ="masukkan nilai 2";
+   cout << raptor_prompt_variable_zzyz << endl;
+   cin >> b;
+   raptor_prompt_variable_zzyz ="masukkan nilai 3";
+   cout << raptor_prompt_variable_zzyz << endl;
+   cin >> c;
+   disk =b ** 2-4*a*c;
+   if (disk>0)
+   {
+      x1 =-b/2*a;
+      x2 =x1;
+   }
+   else
+   {
+      if (disk>0)
+      {
+         x1 =-b+sqrt(disk)/2*a;
+         x2 =-b-sqrt(disk)/2*a;
+      }
+      else
+      {
+         cout << "akar imajiner : "+disk << endl;      }
+   }
+
+   return 0;
+}
